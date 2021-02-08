@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News loader</title>
+</head>
+<body>
+<h1>News loader</h1>
+
+<form action="/news" method="post">
+    <label for="siteName">Input web site name</label>
+    <input type="text" id="siteName" name="siteName" value="{{siteName}}"/>
+    <label for="newsNumber"></label>
+    <select id="newsNumber" name="newsNumber">
+        {{#times 10}}
+        <option value="{{this}}">{{this}}</option>
+        {{/times}}
+    </select>
+    <input type="submit" value="submit"/>
+</form>
+</body>
+</html>
