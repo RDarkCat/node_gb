@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить объект Солнечной системы</title>
+</head>
+<body>
+    <h1>Редактировать планету/звезду</h1>
+    <div>
+        <label for="name">Название</label>
+        <input type="text" name="name" value="{{name}}"/>
+        <label for="size">Размер</label>
+        <input type="text" name="size" value="{{size}}"/>
+        <label for="type">Тип</label>
+        <select name="type" id="type">
+            <option selected value="1">Звезда</option>
+            <option value="2">Планета</option>
+        </select>
+    </div>
+    <input type="button" value="Изменить" onclick="window.location.href='/edit/{{id}}'" />
+</body>
+</html>
