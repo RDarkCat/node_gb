@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить объект Солнечной системы</title>
+</head>
+<body>
+<h1>Добавить планету/звезду</h1>
+    <form action="/store" method="post">
+        <div>
+            <label for="name">Название</label>
+            <input type="text" name="name" value=""/>
+            <label for="size">Размер</label>
+            <input type="text" name="size"/>
+            <label for="type">Тип</label>
+            <select name="type" id="type">
+                <option value="1">Звезда</option>
+                <option value="2">Планета</option>
+            </select>
+        </div>
+        <input type="submit" value="Добавить"/>
+    </form>
+</body>
+</html>
