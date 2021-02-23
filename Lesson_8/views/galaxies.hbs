@@ -1,0 +1,19 @@
+<h1>Список планет Солнечной системы</h1>
+
+{{#if error}}
+    <p>Ошибка: {{error}}</p>
+{{else}}
+    <div>
+        {{#if items}}
+            {{#each items}}
+                <li>
+                    <a href="/show/{{this.id}}">{{this.name}}</a>
+                </li>
+            {{/each}}
+        {{else}}
+            <p>Список пуст</p>
+        {{/if}}
+
+    </div>
+    <input type="button" value="Добавить планету" onclick="window.location.href='/create'" />
+{{/if}}
